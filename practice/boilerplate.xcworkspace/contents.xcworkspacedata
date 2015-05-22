@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:boilerplate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/bguo/github.com/benzguo/interviews/practice/mergesort.playground">
+   </FileRef>
+   <FileRef
+      location = "group:quicksort.playground">
+   </FileRef>
+</Workspace>
