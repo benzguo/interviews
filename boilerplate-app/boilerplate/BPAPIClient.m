@@ -1,4 +1,5 @@
 #import "BPAPIClient.h"
+#import <AFNetworking/AFNetworking.h>
 
 NSString *const BPBaseURLString = @"";
 

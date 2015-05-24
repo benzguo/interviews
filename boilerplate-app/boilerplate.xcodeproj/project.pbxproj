@@ -11,12 +11,11 @@
 		9641A3031B11863B008E9C94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3021B11863B008E9C94 /* main.m */; };
 		9641A3061B11863B008E9C94 /* BPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3051B11863B008E9C94 /* BPAppDelegate.m */; };
 		9641A3091B11863B008E9C94 /* BPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3081B11863B008E9C94 /* BPRootViewController.m */; };
-		9641A30C1B11863B008E9C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9641A30A1B11863B008E9C94 /* Main.storyboard */; };
 		9641A30E1B11863B008E9C94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9641A30D1B11863B008E9C94 /* Images.xcassets */; };
 		9641A3111B11863B008E9C94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9641A30F1B11863B008E9C94 /* LaunchScreen.xib */; };
-		9641A31D1B11863B008E9C94 /* boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A31C1B11863B008E9C94 /* boilerplateTests.m */; };
 		969A05681B1189B4004BE1DD /* BPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A05671B1189B4004BE1DD /* BPAPIClient.m */; };
 		969A056A1B1189C9004BE1DD /* BPAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */; };
+		969A056D1B118CC8004BE1DD /* BPRootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A056C1B118CC8004BE1DD /* BPRootViewModel.m */; };
 		A8AD46BF06DB731860DACF23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0D0C948E055F62DBC29AA6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,17 +41,17 @@
 		9641A3051B11863B008E9C94 /* BPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPAppDelegate.m; sourceTree = "<group>"; };
 		9641A3071B11863B008E9C94 /* BPRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPRootViewController.h; sourceTree = "<group>"; };
 		9641A3081B11863B008E9C94 /* BPRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPRootViewController.m; sourceTree = "<group>"; };
-		9641A30B1B11863B008E9C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9641A30D1B11863B008E9C94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9641A3101B11863B008E9C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9641A3161B11863B008E9C94 /* boilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9641A31B1B11863B008E9C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9641A31C1B11863B008E9C94 /* boilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boilerplateTests.m; sourceTree = "<group>"; };
 		969A05621B118813004BE1DD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		969A05631B1188D6004BE1DD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		969A05661B1189B4004BE1DD /* BPAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAPIClient.h; sourceTree = "<group>"; };
 		969A05671B1189B4004BE1DD /* BPAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAPIClient.m; sourceTree = "<group>"; };
 		969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAPIClientSpec.m; sourceTree = "<group>"; };
+		969A056B1B118CC8004BE1DD /* BPRootViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRootViewModel.h; sourceTree = "<group>"; };
+		969A056C1B118CC8004BE1DD /* BPRootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRootViewModel.m; sourceTree = "<group>"; };
 		976E6F3B2B7E6F39E28D5FAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B88335163D8461E50E686B71 /* Pods-boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boilerplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boilerplateTests/Pods-boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +104,10 @@
 				9641A3051B11863B008E9C94 /* BPAppDelegate.m */,
 				9641A3071B11863B008E9C94 /* BPRootViewController.h */,
 				9641A3081B11863B008E9C94 /* BPRootViewController.m */,
+				969A056B1B118CC8004BE1DD /* BPRootViewModel.h */,
+				969A056C1B118CC8004BE1DD /* BPRootViewModel.m */,
 				969A05661B1189B4004BE1DD /* BPAPIClient.h */,
 				969A05671B1189B4004BE1DD /* BPAPIClient.m */,
-				9641A30A1B11863B008E9C94 /* Main.storyboard */,
 				9641A30D1B11863B008E9C94 /* Images.xcassets */,
 				9641A30F1B11863B008E9C94 /* LaunchScreen.xib */,
 				9641A3001B11863B008E9C94 /* Supporting Files */,
@@ -128,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				969A05631B1188D6004BE1DD /* PrefixHeader.pch */,
-				9641A31C1B11863B008E9C94 /* boilerplateTests.m */,
 				969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */,
 				9641A31A1B11863B008E9C94 /* Supporting Files */,
 			);
@@ -247,7 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9641A30C1B11863B008E9C94 /* Main.storyboard in Resources */,
 				9641A3111B11863B008E9C94 /* LaunchScreen.xib in Resources */,
 				9641A30E1B11863B008E9C94 /* Images.xcassets in Resources */,
 			);
@@ -333,6 +331,7 @@
 				9641A3091B11863B008E9C94 /* BPRootViewController.m in Sources */,
 				9641A3061B11863B008E9C94 /* BPAppDelegate.m in Sources */,
 				9641A3031B11863B008E9C94 /* main.m in Sources */,
+				969A056D1B118CC8004BE1DD /* BPRootViewModel.m in Sources */,
 				969A05681B1189B4004BE1DD /* BPAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				969A056A1B1189C9004BE1DD /* BPAPIClientSpec.m in Sources */,
-				9641A31D1B11863B008E9C94 /* boilerplateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +355,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9641A30A1B11863B008E9C94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9641A30B1B11863B008E9C94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9641A30F1B11863B008E9C94 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
