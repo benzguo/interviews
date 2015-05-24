@@ -1,0 +1,6 @@
+#ifndef boilerplate_PrefixHeader_pch
+#define boilerplate_PrefixHeader_pch
+
+#import <OHHTTPStubs/OHHTTPStubs.h>
+
+#endif
