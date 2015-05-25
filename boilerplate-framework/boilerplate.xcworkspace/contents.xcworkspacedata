@@ -5,7 +5,7 @@
       location = "group:boilerplate.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/bguo/github.com/benzguo/interviews/practice/mergesort.playground">
+      location = "group:mergesort.playground">
    </FileRef>
    <FileRef
       location = "group:quicksort.playground">
