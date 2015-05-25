@@ -1,10 +1,9 @@
-import UIKit
 import XCTest
 import boilerplate
 
 class arrayUtilTests: XCTestCase {
 
-    var array : [Int] = TestUtils.randomIntArray(20000)
+    var array : [Int] = TestUtils.randomIntArray(50000)
 
     override func setUp() {
         super.setUp()
@@ -30,26 +29,22 @@ class arrayUtilTests: XCTestCase {
         XCTAssert(index == nil)
     }
 
+    /*
     func testFindPerformance() {
         self.measureBlock() {
-            ArrayUtils.find(self.array, value: 50)
-            ArrayUtils.find(self.array, value: 50)
-            ArrayUtils.find(self.array, value: 50)
-            ArrayUtils.find(self.array, value: 50)
-            ArrayUtils.find(self.array, value: 50)
-            ArrayUtils.find(self.array, value: 50)
+            ArrayUtils.find(self.array, value: -1)
+            ArrayUtils.find(self.array, value: -1)
+            ArrayUtils.find(self.array, value: -1)
         }
     }
 
     func testPFindPerformance() {
         self.measureBlock() {
-            ArrayUtils.pfind(self.array, value: 50)
-            ArrayUtils.pfind(self.array, value: 50)
-            ArrayUtils.pfind(self.array, value: 50)
-            ArrayUtils.pfind(self.array, value: 50)
-            ArrayUtils.pfind(self.array, value: 50)
-            ArrayUtils.pfind(self.array, value: 50)
+            ArrayUtils.pfind(self.array, value: -1)
+            ArrayUtils.pfind(self.array, value: -1)
+            ArrayUtils.pfind(self.array, value: -1)
         }
     }
+    */
 
 }

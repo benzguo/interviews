@@ -5,7 +5,7 @@ import boilerplate
 class binarySearchTreeTests: XCTestCase {
 
     func testLevelOrderValues() {
-        let bst = BinarySearchTree<Int>(value: 5)
+        let bst = BSTNode<Int>(value: 5)
         bst.insert(1)
         bst.insert(3)
         bst.insert(4)

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		962503F31B12692100C0D66F /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962503F21B12692100C0D66F /* TestUtils.swift */; };
+		964795F51B12C505009DA6A0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964795F41B12C505009DA6A0 /* Graph.swift */; };
+		964795F71B12CD4E009DA6A0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964795F61B12CD4E009DA6A0 /* Heap.swift */; };
+		964795F91B12DEA6009DA6A0 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964795F81B12DEA6009DA6A0 /* HeapTests.swift */; };
 		965382C01B0E87D20097ADE2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965382BF1B0E87D20097ADE2 /* ArrayExtensions.swift */; };
 		969EF8181B0E852E0094E204 /* boilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 969EF8171B0E852E0094E204 /* boilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		969EF81E1B0E852E0094E204 /* boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969EF8121B0E852E0094E204 /* boilerplate.framework */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		962503F21B12692100C0D66F /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		964795F41B12C505009DA6A0 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		964795F61B12CD4E009DA6A0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		964795F81B12DEA6009DA6A0 /* HeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		965382BF1B0E87D20097ADE2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		969EF8121B0E852E0094E204 /* boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		969EF8161B0E852E0094E204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 				96A3FABA1B1170D1001D2A7F /* ArrayUtils.swift */,
 				96A3FAB21B1153F6001D2A7F /* SLinkedList.swift */,
 				96A3FAB61B1160C0001D2A7F /* BinarySearchTree.swift */,
+				964795F41B12C505009DA6A0 /* Graph.swift */,
+				964795F61B12CD4E009DA6A0 /* Heap.swift */,
 				969EF8151B0E852E0094E204 /* Supporting Files */,
 			);
 			path = boilerplate;
@@ -110,6 +118,7 @@
 				96A3FAB81B11682C001D2A7F /* BinarySearchTreeTests.swift */,
 				96A3FABC1B118213001D2A7F /* ArrayUtilTests.swift */,
 				962503F21B12692100C0D66F /* TestUtils.swift */,
+				964795F81B12DEA6009DA6A0 /* HeapTests.swift */,
 				969EF8221B0E852E0094E204 /* Supporting Files */,
 			);
 			path = boilerplateTests;
@@ -233,7 +242,9 @@
 				96A3FAB71B1160C0001D2A7F /* BinarySearchTree.swift in Sources */,
 				96A3FAB31B1153F6001D2A7F /* SLinkedList.swift in Sources */,
 				965382C01B0E87D20097ADE2 /* ArrayExtensions.swift in Sources */,
+				964795F71B12CD4E009DA6A0 /* Heap.swift in Sources */,
 				96A3FABB1B1170D1001D2A7F /* ArrayUtils.swift in Sources */,
+				964795F51B12C505009DA6A0 /* Graph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +256,7 @@
 				96A3FABD1B118213001D2A7F /* ArrayUtilTests.swift in Sources */,
 				969EF8251B0E852E0094E204 /* SLinkedListTests.swift in Sources */,
 				962503F31B12692100C0D66F /* TestUtils.swift in Sources */,
+				964795F91B12DEA6009DA6A0 /* HeapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

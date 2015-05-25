@@ -42,6 +42,7 @@ public enum ArrayUtils {
     static func _pfind<T: Comparable>(array: [T],
         value: T, offset: Int, inout result: Int?, operationQueue: NSOperationQueue) {
 
+            let threshold = 1000
             let count = array.count
             let midIndex = Int(Float(count)/2.0)
             if midIndex >= count {
@@ -53,13 +54,15 @@ public enum ArrayUtils {
                 return
             }
             let left = Array(array[0..<midIndex])
-            if left.count < 100 {
-                let leftIndex = _find(left, value: value, offset: offset)
-                return
-            }
             let right = Array(array[midIndex+1..<count])
-            if right.count < 100 {
+
+            if left.count < threshold && right.count < threshold {
+                let leftIndex = _find(left, value: value, offset: offset)
                 let rightIndex = _find(right, value: value, offset: offset + midIndex + 1)
+                let index = leftIndex ?? rightIndex ?? nil
+                if index != nil {
+                    result = index
+                }
                 return
             }
 

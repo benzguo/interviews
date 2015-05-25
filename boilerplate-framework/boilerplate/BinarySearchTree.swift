@@ -1,9 +1,9 @@
 import Foundation
 
-public class BinarySearchTree <T: Comparable> {
+public class BSTNode <T: Comparable> {
     public var value: T
-    public var left: BinarySearchTree<T>?
-    public var right: BinarySearchTree<T>?
+    public var left: BSTNode<T>?
+    public var right: BSTNode<T>?
 
     public init(value: T) {
         self.value = value
@@ -15,7 +15,7 @@ public class BinarySearchTree <T: Comparable> {
                 left.insert(value)
             }
             else {
-                left = BinarySearchTree<T>(value: value)
+                left = BSTNode<T>(value: value)
             }
         }
         if (value > self.value) {
@@ -23,7 +23,7 @@ public class BinarySearchTree <T: Comparable> {
                 right.insert(value)
             }
             else {
-                right = BinarySearchTree<T>(value: value)
+                right = BSTNode<T>(value: value)
             }
         }
     }
@@ -31,7 +31,7 @@ public class BinarySearchTree <T: Comparable> {
     /// Prints the values in level order
     public var levelOrderValues : [T] {
         var values = [T]()
-        var nodes = [BinarySearchTree<T>]()
+        var nodes = [BSTNode<T>]()
         nodes.append(self)
 
         while !nodes.isEmpty {
