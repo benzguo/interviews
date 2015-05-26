@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Kiwi" "${PODS_ROOT}/Headers/Public/OHHTTPStubs" "${PODS_ROOT}/Headers/Public/ReactiveCocoa"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Kiwi" -isystem "${PODS_ROOT}/Headers/Public/OHHTTPStubs" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AFNetworking" -l"Pods-ReactiveCocoa" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FormatterKit" "${PODS_ROOT}/Headers/Public/Kiwi" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/OHHTTPStubs" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveViewModel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/FormatterKit" -isystem "${PODS_ROOT}/Headers/Public/Kiwi" -isystem "${PODS_ROOT}/Headers/Public/Mantle" -isystem "${PODS_ROOT}/Headers/Public/OHHTTPStubs" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveViewModel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AFNetworking" -l"Pods-FormatterKit" -l"Pods-Mantle" -l"Pods-ReactiveCocoa" -l"Pods-ReactiveViewModel" -framework "AddressBook" -framework "AddressBookUI" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

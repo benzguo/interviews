@@ -2,8 +2,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'AFNetworking', '~> 2.5.4'
 pod 'ReactiveCocoa', '~> 2.5.0'
+pod 'ReactiveViewModel', '~> 0.3'
+pod 'Mantle', '~> 2.0.2'
+pod 'FormatterKit', '~> 1.8.0'
 
 target "boilerplateTests", :exclusive => true do
-    pod 'Kiwi', '~>2.3.1'
+    pod 'Kiwi', '~> 2.3.1'
     pod 'OHHTTPStubs', '~> 4.0.2'
 end

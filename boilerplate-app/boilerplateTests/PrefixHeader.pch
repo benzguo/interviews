@@ -2,5 +2,6 @@
 #define boilerplate_PrefixHeader_pch
 
 #import <OHHTTPStubs/OHHTTPStubs.h>
+#import "BPTestUtilities.h"
 
 #endif

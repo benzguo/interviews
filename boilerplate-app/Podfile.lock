@@ -20,7 +20,29 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FormatterKit (1.8.0):
+    - FormatterKit/AddressFormatter (= 1.8.0)
+    - FormatterKit/ArrayFormatter (= 1.8.0)
+    - FormatterKit/ColorFormatter (= 1.8.0)
+    - FormatterKit/LocationFormatter (= 1.8.0)
+    - FormatterKit/NameFormatter (= 1.8.0)
+    - FormatterKit/OrdinalNumberFormatter (= 1.8.0)
+    - FormatterKit/TimeIntervalFormatter (= 1.8.0)
+    - FormatterKit/UnitOfInformationFormatter (= 1.8.0)
+    - FormatterKit/URLRequestFormatter (= 1.8.0)
+  - FormatterKit/AddressFormatter (1.8.0)
+  - FormatterKit/ArrayFormatter (1.8.0)
+  - FormatterKit/ColorFormatter (1.8.0)
+  - FormatterKit/LocationFormatter (1.8.0)
+  - FormatterKit/NameFormatter (1.8.0)
+  - FormatterKit/OrdinalNumberFormatter (1.8.0)
+  - FormatterKit/TimeIntervalFormatter (1.8.0)
+  - FormatterKit/UnitOfInformationFormatter (1.8.0)
+  - FormatterKit/URLRequestFormatter (1.8.0)
   - Kiwi (2.3.1)
+  - Mantle (2.0.2):
+    - Mantle/extobjc (= 2.0.2)
+  - Mantle/extobjc (2.0.2)
   - OHHTTPStubs (4.0.2)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -29,17 +51,25 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - FormatterKit (~> 1.8.0)
   - Kiwi (~> 2.3.1)
+  - Mantle (~> 2.0.2)
   - OHHTTPStubs (~> 4.0.2)
   - ReactiveCocoa (~> 2.5.0)
+  - ReactiveViewModel (~> 0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  Mantle: 967fd31ea0220890b2e76589198996b534bb3fb1
   OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
 
 COCOAPODS: 0.37.1

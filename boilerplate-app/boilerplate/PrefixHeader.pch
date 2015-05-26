@@ -2,5 +2,6 @@
 #define boilerplate_PrefixHeader_pch
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Mantle/Mantle.h>
 
 #endif
