@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		34AF7886DA18D6D3BC0C3242 /* libPods-boilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C40008E99535003BAE07D28 /* libPods-boilerplateTests.a */; };
+		9606D8911B14B4CF00475188 /* BPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606D8901B14B4CF00475188 /* BPLogger.m */; };
+		9606D8941B14B51900475188 /* BPLoggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606D8931B14B51900475188 /* BPLoggerEvent.m */; };
+		9606D8961B14B73F00475188 /* BPLoggerEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606D8951B14B73F00475188 /* BPLoggerEventSpec.m */; };
 		9641A3031B11863B008E9C94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3021B11863B008E9C94 /* main.m */; };
 		9641A3061B11863B008E9C94 /* BPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3051B11863B008E9C94 /* BPAppDelegate.m */; };
 		9641A3091B11863B008E9C94 /* BPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A3081B11863B008E9C94 /* BPRootViewController.m */; };
@@ -18,6 +21,8 @@
 		969A05681B1189B4004BE1DD /* BPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A05671B1189B4004BE1DD /* BPAPIClient.m */; };
 		969A056A1B1189C9004BE1DD /* BPAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */; };
 		969A056D1B118CC8004BE1DD /* BPRootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A056C1B118CC8004BE1DD /* BPRootViewModel.m */; };
+		96C4CA261B16081900230C87 /* BPRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C4CA251B16081900230C87 /* BPRefreshControl.m */; };
+		96C4CA291B16152D00230C87 /* BPRefreshMaskingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C4CA281B16152D00230C87 /* BPRefreshMaskingView.m */; };
 		A8AD46BF06DB731860DACF23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0D0C948E055F62DBC29AA6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,11 @@
 		5DE01288236D773C4BCF3ABE /* Pods-boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boilerplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-boilerplateTests/Pods-boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C40008E99535003BAE07D28 /* libPods-boilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD5B5C200181E86FB4D3F47 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9606D88F1B14B4CF00475188 /* BPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLogger.h; sourceTree = "<group>"; };
+		9606D8901B14B4CF00475188 /* BPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLogger.m; sourceTree = "<group>"; };
+		9606D8921B14B51900475188 /* BPLoggerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLoggerEvent.h; sourceTree = "<group>"; };
+		9606D8931B14B51900475188 /* BPLoggerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLoggerEvent.m; sourceTree = "<group>"; };
+		9606D8951B14B73F00475188 /* BPLoggerEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLoggerEventSpec.m; sourceTree = "<group>"; };
 		9641A2FD1B11863B008E9C94 /* boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9641A3011B11863B008E9C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9641A3021B11863B008E9C94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +66,10 @@
 		969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAPIClientSpec.m; sourceTree = "<group>"; };
 		969A056B1B118CC8004BE1DD /* BPRootViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRootViewModel.h; sourceTree = "<group>"; };
 		969A056C1B118CC8004BE1DD /* BPRootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRootViewModel.m; sourceTree = "<group>"; };
+		96C4CA241B16081900230C87 /* BPRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRefreshControl.h; sourceTree = "<group>"; };
+		96C4CA251B16081900230C87 /* BPRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRefreshControl.m; sourceTree = "<group>"; };
+		96C4CA271B16152D00230C87 /* BPRefreshMaskingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRefreshMaskingView.h; sourceTree = "<group>"; };
+		96C4CA281B16152D00230C87 /* BPRefreshMaskingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRefreshMaskingView.m; sourceTree = "<group>"; };
 		976E6F3B2B7E6F39E28D5FAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B88335163D8461E50E686B71 /* Pods-boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boilerplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boilerplateTests/Pods-boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,10 +122,18 @@
 				9641A3051B11863B008E9C94 /* BPAppDelegate.m */,
 				9641A3071B11863B008E9C94 /* BPRootViewController.h */,
 				9641A3081B11863B008E9C94 /* BPRootViewController.m */,
+				96C4CA241B16081900230C87 /* BPRefreshControl.h */,
+				96C4CA251B16081900230C87 /* BPRefreshControl.m */,
+				96C4CA271B16152D00230C87 /* BPRefreshMaskingView.h */,
+				96C4CA281B16152D00230C87 /* BPRefreshMaskingView.m */,
 				969A056B1B118CC8004BE1DD /* BPRootViewModel.h */,
 				969A056C1B118CC8004BE1DD /* BPRootViewModel.m */,
 				969A05661B1189B4004BE1DD /* BPAPIClient.h */,
 				969A05671B1189B4004BE1DD /* BPAPIClient.m */,
+				9606D88F1B14B4CF00475188 /* BPLogger.h */,
+				9606D8901B14B4CF00475188 /* BPLogger.m */,
+				9606D8921B14B51900475188 /* BPLoggerEvent.h */,
+				9606D8931B14B51900475188 /* BPLoggerEvent.m */,
 				9641A30D1B11863B008E9C94 /* Images.xcassets */,
 				9641A30F1B11863B008E9C94 /* LaunchScreen.xib */,
 				9641A3001B11863B008E9C94 /* Supporting Files */,
@@ -135,6 +157,7 @@
 				96520BF41B14A752001E3A7A /* BPTestUtilities.h */,
 				96520BF51B14A752001E3A7A /* BPTestUtilities.m */,
 				969A05691B1189C9004BE1DD /* BPAPIClientSpec.m */,
+				9606D8951B14B73F00475188 /* BPLoggerEventSpec.m */,
 				9641A31A1B11863B008E9C94 /* Supporting Files */,
 			);
 			path = boilerplateTests;
@@ -338,8 +361,12 @@
 				9641A3061B11863B008E9C94 /* BPAppDelegate.m in Sources */,
 				9641A3031B11863B008E9C94 /* main.m in Sources */,
 				969A056D1B118CC8004BE1DD /* BPRootViewModel.m in Sources */,
+				9606D8911B14B4CF00475188 /* BPLogger.m in Sources */,
+				96C4CA261B16081900230C87 /* BPRefreshControl.m in Sources */,
 				96520BF61B14A752001E3A7A /* BPTestUtilities.m in Sources */,
+				9606D8941B14B51900475188 /* BPLoggerEvent.m in Sources */,
 				969A05681B1189B4004BE1DD /* BPAPIClient.m in Sources */,
+				96C4CA291B16152D00230C87 /* BPRefreshMaskingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96520BF71B14A752001E3A7A /* BPTestUtilities.m in Sources */,
+				9606D8961B14B73F00475188 /* BPLoggerEventSpec.m in Sources */,
 				969A056A1B1189C9004BE1DD /* BPAPIClientSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

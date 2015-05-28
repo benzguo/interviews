@@ -1,52 +1,94 @@
 #import "BPAPIClient.h"
 #import <AFNetworking/AFNetworking.h>
+#import "BPLoggerEvent.h"
 
-NSString *const BPBaseURLString = @"";
+NSString *const BPBaseURLString = @"http://requestb.in/nv310qnv";
+NSString *const BPClientIDKey = @"client_id";
 
 @interface BPAPIClient ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
+@property (nonatomic, strong) NSString *clientId;
+
 
 @end
 
 @implementation BPAPIClient
 
-+ (NSMutableDictionary *)baseParameters
+- (NSMutableDictionary *)baseParameters
 {
-    return [NSMutableDictionary dictionaryWithDictionary:@{}];
+    return [NSMutableDictionary dictionaryWithDictionary:@{
+                                                           BPClientIDKey: self.clientId
+                                                           }];
 }
 
-- (instancetype)init
+- (instancetype)initWithClientId:(NSString *)clientId
 {
     self = [super init];
     if (self) {
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:BPBaseURLString]];
+        _clientId = clientId;
+        _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:BPBaseURLString]];
     }
     return self;
 }
 
-- (void)fetchThing:(NSString *)thingId callback:(void (^)(NSDictionary *object))callback
+- (void)postEvent:(BPLoggerEvent *)event callback:(void (^)(BOOL success))callback
 {
     if (!callback) {
         return;
     }
-    NSString *path = [[[NSURL URLWithString:@""] URLByAppendingPathComponent:@""] absoluteString];
-    NSString *urlString = [[NSURL URLWithString:path relativeToURL:self.sessionManager.baseURL] absoluteString];
-    NSDictionary *parameters = [BPAPIClient baseParameters];
-    NSMutableURLRequest *request = [self.sessionManager.requestSerializer requestWithMethod:@"GET"
-                                                                                  URLString:urlString
-                                                                                 parameters:parameters
-                                                                                      error:nil];
-    NSURLSessionDataTask *task =
-    [self.sessionManager dataTaskWithRequest:request
-                           completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-                               if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                                   callback(responseObject);
-                                   return;
-                               }
-                               callback(nil);
-                           }];
-    [task resume];
+    NSMutableDictionary *parameters = [self baseParameters];
+    [parameters addEntriesFromDictionary:[event dictionaryRepresentation]];
+
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURL *url = [NSURL URLWithString:BPBaseURLString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSData *data = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    request.HTTPBody = data;
+    request.allHTTPHeaderFields = @{@"Content-Type": @"application/json",
+                                    @"Accept": @"application/json"};
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                    if (!error && httpResponse.statusCode == 200) {
+                        callback(YES);
+                        return;
+                    }
+                    callback(NO);
+    }] resume];
+
+
+}
+
+
+- (void)postEvents:(NSArray *)events callback:(void (^)(BOOL success))callback
+{
+    if (!callback) {
+        return;
+    }
+    NSMutableDictionary *parameters = [self baseParameters];
+//    [parameters addEntriesFromDictionary:[event dictionaryRepresentation]];
+
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURL *url = [NSURL URLWithString:BPBaseURLString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSData *data = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    request.HTTPBody = data;
+    request.allHTTPHeaderFields = @{@"Content-Type": @"application/json",
+                                    @"Accept": @"application/json"};
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                    if (!error && httpResponse.statusCode == 200) {
+                        callback(YES);
+                        return;
+                    }
+                    callback(NO);
+                }] resume];
+    
+    
 }
 
 @end
